@@ -1,3 +1,5 @@
+# change the working directory where the UCI HAR Dataset is contained
+
 # load the training data
 activityTrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
 subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
@@ -76,3 +78,6 @@ remove(dataTest)
 remove(dataTrain)
 remove(frameTest)
 remove(frameTrain)
+
+# write the tidy set in a txt file
+write.table(tidyData, file = "output.txt", row.names = F)
