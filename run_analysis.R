@@ -80,4 +80,4 @@ remove(frameTest)
 remove(frameTrain)
 
 # write the tidy set in a txt file
-write.table(tidyData, file = "output.txt", row.names = F)
+write.table(tidyData, file = "output.txt", col.names = F)
